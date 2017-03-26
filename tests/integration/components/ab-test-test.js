@@ -7,19 +7,23 @@ moduleForComponent('ab-test', 'Integration | Component | ab test', {
 
 test('it renders', function(assert) {
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{ab-test}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
+  this.set('visible', true);
   this.render(hbs`
-    {{#ab-test}}
+    {{#ab-test visible=visible}}
       template block text
     {{/ab-test}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(
+    this.$().text().trim(),
+    'template block text',
+    'The text is visible'
+  );
+
+  this.set('visible', false);
+  assert.equal(
+    this.$().text().trim(),
+    '',
+    'The text is not visible'
+  );
 });
