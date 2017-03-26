@@ -1,6 +1,6 @@
 {
   "name": "ember-a-b",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Unoppinionated and simple AB testing for Ember Apps",
   "keywords": [
     "ember-addon",
