@@ -22,6 +22,7 @@ ember install ember-a-b
     Tiny dog creatures
   {{/ab.b}}
 
+  {{!TODO CTA stuff}}
   {{ab.cta}} 
     <button onclick={{action "purchase"}}>
       Buy now!
@@ -31,7 +32,7 @@ ember install ember-a-b
 {{/ember-a-b}}
 ```
 
-*Inline:* TODO
+TODO *Inline:* TODO
 {{ember-a-b 
   a="Cute Puppies!"
   b="Tiny dog creatures"
@@ -39,8 +40,20 @@ ember install ember-a-b
 
 ### Configuration
 
+Install and use right now.
+
+TODO:
+
+* Add a config option to randomize in testing
+* configure to send data to external source
+* configure to use extranal source to show a or b
+
 ### Testing
 
+TODO:
+
+* If testing, always show A by default
+* add test helper to either show one or the other
 
 ### API
 
