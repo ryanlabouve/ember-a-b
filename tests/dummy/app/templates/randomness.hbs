@@ -1,0 +1,11 @@
+{{#each lines as |line|}}
+  {{#a-b show=visibleHeadline as |ab|}}
+    {{#ab.a}}
+      <div class="js-headline-one">Headline One!</div>
+    {{/ab.a}}
+
+    {{#ab.b}}
+      <div class="js-headline-two">Headline Two!</div>
+    {{/ab.b}}
+  {{/a-b}}
+{{/each}}
