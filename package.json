@@ -1,12 +1,16 @@
 {
   "name": "ember-a-b",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Unoppinionated and simple AB testing for Ember Apps",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ab testing",
+    "marketing",
+    "SEO",
+    "ux"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "@ryanlabouve",
   "directories": {
     "doc": "doc",
     "test": "tests"
