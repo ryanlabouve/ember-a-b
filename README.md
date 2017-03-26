@@ -1,26 +1,72 @@
 # ember-a-b
 
-This README outlines the details of collaborating on this Ember addon.
+> Disclosure: This is in active development.
 
-## Installation
+Simple AB testing for your Ember Apps.
+
+```
+ember install ember-a-b
+```
+## For Usage
+
+### Examples
+
+*Block with contextual components*: TODO
+```
+{{#ember-a-b as |ab|}}
+  {{#ab.a}}
+    Cute puppies!
+  {{/ab.a}}
+
+  {{#ab.b}}
+    Tiny dog creatures
+  {{/ab.b}}
+
+  {{ab.cta}} 
+    <button onclick={{action "purchase"}}>
+      Buy now!
+    </button>
+  {{/ab.cta}}
+
+{{/ember-a-b}}
+```
+
+*Inline:* TODO
+{{ember-a-b 
+  a="Cute Puppies!"
+  b="Tiny dog creatures"
+  cta="#signUpButton"}}
+
+### Configuration
+
+### Testing
+
+
+### API
+
+TODO:
+
+## For Development
+
+### Installation
 
 * `git clone <repository-url>` this repository
 * `cd ember-a-b`
 * `npm install`
 * `bower install`
 
-## Running
+### Running
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+### Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
 
