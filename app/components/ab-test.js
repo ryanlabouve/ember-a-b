@@ -1,0 +1,1 @@
+export { default } from 'ember-a-b/components/ab-test';
